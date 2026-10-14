@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Matthews Painting - Top-rated Interior Painting Services, Plumbing Inspection, Drywall Installation, and Remodeling in Broken Arrow, OK. Call (918) 260-6554 for a free estimate!">
-    <meta name="keywords" content="Interior Painting Services, Plumbing near me, Drywall Installation Services, Plumbing inspection Services, Broken Arrow OK Painters, Remodel Services">
-    <title>Matthews Painting | Painting, Drywall & Plumbing Services in Broken Arrow, OK</title>
+    <meta name="description" content="Matthews Painting - Professional Interior Painting Services, Plumbing Inspection, Drywall Installation & Repair, and Remodeling in Broken Arrow, OK. Get a free estimate today!">
+    <meta name="keywords" content="Interior Painting Services, Plumbing inspection Services, Drywall Installation Services, Broken Arrow OK Painters, Remodel Services, Wall texturing, Color and Decorating Help">
+    <title>Matthews Painting | Interior Painting, Drywall & Plumbing Services in Broken Arrow, OK</title>
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,19 +16,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
 
-    <!-- Tailwind Configuration -->
+    <!-- Tailwind Custom Configuration -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         brand: {
-                            navy: '#0F2C59',
-                            navyDark: '#0A1E3F',
-                            gold: '#E58E26',
-                            goldHover: '#C6771B',
-                            slate: '#F8F9FA',
-                            dark: '#1A1A1A',
+                            navy: '#0d2c54',
+                            navyDark: '#071930',
+                            gold: '#f6a623',
+                            goldHover: '#e09315',
+                            slate: '#F8FAFC',
+                            dark: '#1E293B',
                             muted: '#64748B'
                         }
                     },
@@ -42,29 +42,26 @@
     </script>
     <style>
         .hero-overlay {
-            background: linear-gradient(135deg, rgba(15, 44, 89, 0.92) 0%, rgba(10, 30, 63, 0.82) 100%);
+            background: linear-gradient(135deg, rgba(13, 44, 84, 0.92) 0%, rgba(7, 25, 48, 0.85) 100%);
         }
         .gold-glow {
-            text-shadow: 0 0 20px rgba(229, 142, 38, 0.35);
+            text-shadow: 0 0 20px rgba(246, 166, 35, 0.35);
         }
     </style>
 </head>
 <body class="font-sans bg-brand-slate text-brand-dark antialiased selection:bg-brand-gold selection:text-white">
 
-    <!-- HEADER / NAVIGATION -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-200">
+    <!-- HEADER / NAVIGATION SECTION -->
+    <!-- STRICT COMPLIANCE: Header displays ONLY the official Logo and Nav Links. NO Business Name text, NO Phone Number. -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- Brand Logo & Name -->
-                <a href="#home" class="flex items-center gap-3 group">
+                <!-- Official Logo Only -->
+                <a href="#home" class="flex items-center group">
                     <img src="https://cmatthewspainting.com/wp-content/uploads/2025/02/567527181_1383647086799721_1879409617736062730_n-Photoroom-copy-1.png" 
                          alt="Matthews Painting Logo" 
                          class="h-12 sm:h-14 w-auto object-contain transition duration-300 group-hover:scale-105"
-                         onerror="this.src='https://placehold.co/200x60/0F2C59/ffffff?text=Matthews+Painting'">
-                    <div class="hidden sm:block border-l-2 border-slate-200 pl-3 py-1">
-                        <span class="text-lg font-heading font-extrabold text-brand-navy tracking-tight block leading-none">MATTHEWS</span>
-                        <span class="text-[10px] font-bold text-brand-gold tracking-widest uppercase">Painting & Contracting</span>
-                    </div>
+                         onerror="this.src='https://placehold.co/200x60/0d2c54/ffffff?text=Matthews+Painting'">
                 </a>
 
                 <!-- Desktop Navigation Menu -->
@@ -74,58 +71,46 @@
                     <a href="#services" class="hover:text-brand-gold transition-colors py-1 border-b-2 border-transparent hover:border-brand-gold">Services</a>
                     <a href="#reviews" class="hover:text-brand-gold transition-colors py-1 border-b-2 border-transparent hover:border-brand-gold">Reviews</a>
                     <a href="#faq" class="hover:text-brand-gold transition-colors py-1 border-b-2 border-transparent hover:border-brand-gold">FAQ</a>
-                    <a href="#contact" class="hover:text-brand-gold transition-colors py-1 border-b-2 border-transparent hover:border-brand-gold">Contact Us</a>
+                    <a href="#contact" class="hover:text-brand-gold transition-colors py-1 border-b-2 border-transparent hover:border-brand-gold">Contact</a>
                 </nav>
 
-                <!-- Header Call CTA -->
-                <div class="hidden sm:flex items-center gap-3">
-                    <a href="tel:9182606554" class="px-5 py-2.5 rounded-xl bg-brand-gold hover:bg-brand-goldHover text-white font-extrabold text-xs uppercase tracking-wider shadow-md hover:shadow-lg transition duration-200 flex items-center gap-2">
-                        <i class="fa-solid fa-phone"></i>
-                        <span>Call: (918) 260-6554</span>
-                    </a>
-                </div>
-
-                <!-- Mobile Hamburger Button -->
-                <button id="mobileMenuBtn" aria-label="Toggle Navigation" class="lg:hidden p-2 text-brand-navy hover:text-brand-gold focus:outline-none">
+                <!-- Mobile Hamburger Toggle Button -->
+                <button id="mobileMenuBtn" aria-label="Toggle Mobile Navigation" class="lg:hidden p-2 text-brand-navy hover:text-brand-gold focus:outline-none">
                     <i class="fa-solid fa-bars text-2xl" id="menuIcon"></i>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Dropdown Menu -->
+        <!-- Mobile Dropdown Navigation -->
         <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3">
-            <a href="#home" class="block py-2 text-slate-800 font-semibold hover:text-brand-gold border-b border-slate-100">Home</a>
-            <a href="#about" class="block py-2 text-slate-800 font-semibold hover:text-brand-gold border-b border-slate-100">About Us</a>
-            <a href="#services" class="block py-2 text-slate-800 font-semibold hover:text-brand-gold border-b border-slate-100">Services</a>
-            <a href="#reviews" class="block py-2 text-slate-800 font-semibold hover:text-brand-gold border-b border-slate-100">Reviews</a>
-            <a href="#faq" class="block py-2 text-slate-800 font-semibold hover:text-brand-gold border-b border-slate-100">FAQ</a>
-            <a href="#contact" class="block py-2 text-slate-800 font-semibold hover:text-brand-gold border-b border-slate-100">Contact Us</a>
-            <div class="pt-2">
-                <a href="tel:9182606554" class="w-full py-3 text-center bg-brand-gold text-white font-bold rounded-xl flex items-center justify-center gap-2 shadow">
-                    <i class="fa-solid fa-phone"></i> Call (918) 260-6554
-                </a>
-            </div>
+            <a href="#home" class="mobile-nav-link block py-2.5 text-slate-800 font-semibold hover:text-brand-gold border-b border-slate-100">Home</a>
+            <a href="#about" class="mobile-nav-link block py-2.5 text-slate-800 font-semibold hover:text-brand-gold border-b border-slate-100">About Us</a>
+            <a href="#services" class="mobile-nav-link block py-2.5 text-slate-800 font-semibold hover:text-brand-gold border-b border-slate-100">Services</a>
+            <a href="#reviews" class="mobile-nav-link block py-2.5 text-slate-800 font-semibold hover:text-brand-gold border-b border-slate-100">Reviews</a>
+            <a href="#faq" class="mobile-nav-link block py-2.5 text-slate-800 font-semibold hover:text-brand-gold border-b border-slate-100">FAQ</a>
+            <a href="#contact" class="mobile-nav-link block py-2.5 text-slate-800 font-semibold hover:text-brand-gold">Contact</a>
         </div>
     </header>
 
     <!-- HERO SECTION -->
+    <!-- STRICT COMPLIANCE: NO Phone Number or Phone CTA in the Hero Section -->
     <section id="home" class="relative bg-brand-navy text-white min-h-[85vh] flex items-center overflow-hidden">
-        <!-- Background Image with Overlay -->
+        <!-- Background Imagery & Overlay -->
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=2000&q=80" 
                  alt="Matthews Painting Professional House Painting in Broken Arrow OK" 
                  class="w-full h-full object-cover object-center"
-                 onerror="this.src='https://placehold.co/1920x1080/0F2C59/ffffff?text=Matthews+Painting'">
+                 onerror="this.src='https://placehold.co/1920x1080/0d2c54/ffffff?text=Matthews+Painting'">
             <div class="absolute inset-0 hero-overlay"></div>
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10 w-full">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
                 
-                <!-- Left Column text content -->
+                <!-- Left Column Main Intro -->
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-gold/20 border border-brand-gold/40 text-brand-gold text-xs sm:text-sm font-bold uppercase tracking-wider">
-                        <i class="fa-solid fa-award"></i> Broken Arrow's Premier Residential & Commercial Specialists
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-gold/20 border border-brand-gold/40 text-brand-gold text-xs sm:text-sm font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-paintbrush"></i> Broken Arrow's Premier Painting & Trade Specialists
                     </div>
                     
                     <h1 class="text-3xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white leading-tight">
@@ -133,22 +118,22 @@
                     </h1>
                     
                     <p class="text-base sm:text-lg text-slate-200 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                        Transforming homes and commercial properties in Broken Arrow, OK with expert craftsmanship. From new build painting and drywall repairs to plumbing inspections, we deliver flawless results every time.
+                        Transforming residential homes and small commercial properties across Broken Arrow, OK with flawless craftsmanship. From custom interior painting and wall texturing to drywall repair and plumbing inspections, we deliver pristine results every time.
                     </p>
 
-                    <!-- CTA Buttons -->
+                    <!-- Hero CTAs: "Get Free Estimate" and "Find Us on Google Maps" ONLY -->
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-brand-gold hover:bg-brand-goldHover text-white font-heading font-extrabold text-base rounded-xl shadow-lg shadow-amber-500/30 transform hover:-translate-y-0.5 transition duration-200 flex items-center justify-center gap-3">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-brand-gold hover:bg-brand-goldHover text-brand-navy font-heading font-extrabold text-base rounded-xl shadow-lg shadow-amber-500/20 transform hover:-translate-y-0.5 transition duration-200 flex items-center justify-center gap-3">
                             <span>Get Free Estimate</span>
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
-                        <a href="tel:9182606554" class="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/25 backdrop-blur-md font-bold text-base rounded-xl transition flex items-center justify-center gap-3">
-                            <i class="fa-solid fa-phone text-brand-gold"></i>
-                            <span>(918) 260-6554</span>
+                        <a href="https://maps.app.goo.gl/qZaD9HCqz5LHgXW88" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/25 backdrop-blur-md font-bold text-base rounded-xl transition flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-location-dot text-brand-gold"></i>
+                            <span>Find Us on Google Maps</span>
                         </a>
                     </div>
 
-                    <!-- Trust Stats -->
+                    <!-- Quality Highlights -->
                     <div class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-700/80 max-w-lg mx-auto lg:mx-0 text-slate-300 text-xs sm:text-sm">
                         <div class="flex items-center justify-center lg:justify-start gap-2">
                             <i class="fa-solid fa-circle-check text-brand-gold"></i>
@@ -156,43 +141,44 @@
                         </div>
                         <div class="flex items-center justify-center lg:justify-start gap-2">
                             <i class="fa-solid fa-circle-check text-brand-gold"></i>
-                            <span>Commercial & Home</span>
+                            <span>Home & Business</span>
                         </div>
                         <div class="flex items-center justify-center lg:justify-start gap-2">
                             <i class="fa-solid fa-circle-check text-brand-gold"></i>
-                            <span>Licensed Quality</span>
+                            <span>Quality Guaranteed</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right Column Quick Quote Card -->
+                <!-- Right Column Hero Quick Quote Card -->
                 <div class="lg:col-span-5">
                     <div class="bg-white text-brand-dark p-6 sm:p-8 rounded-2xl shadow-2xl border border-slate-100 relative">
-                        <div class="absolute -top-3 right-6 bg-brand-gold text-white text-[11px] font-black uppercase tracking-wider px-3 py-1 rounded-full shadow">
+                        <div class="absolute -top-3 right-6 bg-brand-gold text-brand-navy text-[11px] font-black uppercase tracking-wider px-3 py-1 rounded-full shadow">
                             Fast Response
                         </div>
                         <h3 class="text-2xl font-heading font-extrabold text-brand-navy mb-1">Request Free Quote</h3>
                         <p class="text-xs text-slate-500 mb-6">Schedule your free estimate or service consultation today.</p>
 
-                        <form id="heroEstimateForm" onsubmit="handleFormSubmit(event, 'Quick Quote')" class="space-y-4">
+                        <form id="heroEstimateForm" onsubmit="handleFormSubmit(event, 'Quick Hero Quote')" class="space-y-4">
                             <div>
-                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Name *</label>
-                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none text-sm transition">
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Full Name *</label>
+                                <input type="text" required placeholder="John Smith" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none text-sm transition">
                             </div>
                             <div>
-                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone Number *</label>
-                                <input type="tel" required placeholder="(918) 260-6554" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none text-sm transition">
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Email Address</label>
+                                <input type="email" placeholder="john@example.com" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none text-sm transition">
                             </div>
                             <div>
-                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Service Requested *</label>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Service Needed *</label>
                                 <select required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none text-sm transition">
                                     <option value="" disabled selected>Select a Service...</option>
-                                    <option value="Interior/Exterior Painting">Interior & Exterior Painting</option>
+                                    <option value="Interior Painting Services">Interior Painting Services</option>
+                                    <option value="Plumbing Inspection Services">Plumbing Inspection Services</option>
                                     <option value="Drywall Installation & Repair">Drywall Installation & Repair</option>
-                                    <option value="Plumbing Support & Inspection">Plumbing Support & Inspection</option>
-                                    <option value="Remodeling Services">Residential or Commercial Remodel</option>
+                                    <option value="Remodel & Wood Repair">Remodel & Wood Repair</option>
+                                    <option value="New Build Painting">New Build Painting</option>
+                                    <option value="Small Commercial Painting">Small Commercial Painting</option>
                                     <option value="Color & Decorating Help">Color & Decorating Help</option>
-                                    <option value="Wood & Wall Repairs">Wood Trim & Wall Repairs</option>
                                 </select>
                             </div>
                             <button type="submit" class="w-full py-3.5 bg-brand-navy hover:bg-brand-navyDark text-white font-heading font-extrabold text-sm rounded-xl uppercase tracking-wider shadow-md hover:shadow-lg transition duration-200">
@@ -216,7 +202,7 @@
                         <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1000&q=80" 
                              alt="Matthews Painting Service Quality Craftsmanship" 
                              class="w-full h-[400px] sm:h-[480px] object-cover"
-                             onerror="this.src='https://placehold.co/800x600/0F2C59/ffffff?text=Quality+Craftsmanship'">
+                             onerror="this.src='https://placehold.co/800x600/0d2c54/ffffff?text=Quality+Craftsmanship'">
                     </div>
                     <!-- Badge Overlay -->
                     <div class="absolute -bottom-6 -right-2 sm:right-6 bg-brand-navy text-white p-6 rounded-2xl shadow-xl max-w-xs border border-slate-700">
@@ -231,17 +217,17 @@
 
                 <!-- Text Content -->
                 <div class="space-y-6">
-                    <div class="inline-block px-3 py-1 bg-amber-100 text-brand-goldHover text-xs font-bold uppercase tracking-widest rounded-md">
+                    <div class="inline-block px-3.5 py-1 bg-amber-100 text-brand-goldHover text-xs font-extrabold uppercase tracking-widest rounded-md">
                         About Matthews Painting
                     </div>
                     <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-brand-navy leading-tight">
-                        Your Trusted Local Painter & Contractor in Broken Arrow, OK
+                        Your Trusted Local Painter & Multi-Trade Contractor in Broken Arrow, OK
                     </h2>
                     <p class="text-slate-600 text-base leading-relaxed">
-                        Welcome to <strong>Matthews Painting</strong>, your go-to contractor in Broken Arrow, OK. We deliver high-caliber craftsmanship for both residential homeowners and local commercial businesses. 
+                        Welcome to <strong>Matthews Painting</strong>, your dedicated team for high-quality residential and small commercial upgrades in Broken Arrow, OK. We bring expert craftsmanship and attention to detail to every project we undertake.
                     </p>
                     <p class="text-slate-600 text-base leading-relaxed">
-                        Beyond superior interior and exterior painting, we provide expert plumbing support and inspections, drywall installation and patching, complete remodeling services, and custom color consulting. Every project is handled with precision, clean job sites, and durable materials designed to last.
+                        Beyond top-tier interior and exterior painting, we specialize in complete drywall repairs, wall patching, custom texturing, wood trim restorations, plumbing inspections, and full remodels. Every job is handled with clean work sites, precision, and durable materials meant to last.
                     </p>
 
                     <!-- Feature Highlights -->
@@ -251,18 +237,18 @@
                                 <i class="fa-solid fa-paintbrush"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-brand-navy text-sm">Flawless Finishes</h4>
-                                <p class="text-xs text-slate-500">Meticulous wall preparation, patching, and crisp lines.</p>
+                                <h4 class="font-bold text-brand-navy text-sm">Flawless Wall Finishes</h4>
+                                <p class="text-xs text-slate-500">Meticulous surface prep, wall patching, and razor-sharp paint lines.</p>
                             </div>
                         </div>
 
                         <div class="p-4 rounded-xl bg-brand-slate border border-slate-200/80 flex items-start gap-3">
                             <div class="w-10 h-10 rounded-lg bg-brand-navy/10 text-brand-navy flex items-center justify-center text-lg shrink-0">
-                                <i class="fa-solid fa-wrench"></i>
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
                             </div>
                             <div>
                                 <h4 class="font-bold text-brand-navy text-sm">Multi-Trade Expertise</h4>
-                                <p class="text-xs text-slate-500">Integrated painting, drywall, and plumbing solutions.</p>
+                                <p class="text-xs text-slate-500">Integrated painting, drywall patching, and plumbing inspections.</p>
                             </div>
                         </div>
                     </div>
@@ -283,59 +269,73 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
                 <span class="px-3.5 py-1.5 bg-amber-100 text-brand-goldHover text-xs font-extrabold uppercase tracking-widest rounded-full">
-                    Our Comprehensive Solutions
+                    Our Specialized Solutions
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-heading font-black text-brand-navy">Commercial & Residential Services</h2>
                 <p class="text-slate-600 text-sm sm:text-base">
-                    Explore our specialized trade services available throughout Broken Arrow, OK and surrounding areas.
+                    Explore our complete suite of painting, drywall, plumbing, and remodeling solutions available in Broken Arrow, OK.
                 </p>
             </div>
 
-            <!-- Service Cards Grid -->
+            <!-- Services Grid -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Service 1: Painting Services -->
+                <!-- Service 1: Interior Painting Services -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 border border-slate-200/80 flex flex-col group">
                     <div class="h-52 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80" 
                              alt="Interior Painting Services" 
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                             onerror="this.src='https://placehold.co/600x400/0F2C59/ffffff?text=Painting+Services'">
+                             onerror="this.src='https://placehold.co/600x400/0d2c54/ffffff?text=Interior+Painting'">
                         <span class="absolute top-3 left-3 bg-brand-navy text-white text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
                             Primary Service
                         </span>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <h3 class="text-xl font-heading font-bold text-brand-navy mb-2 group-hover:text-brand-gold transition">Interior & New Build Painting</h3>
+                            <h3 class="text-xl font-heading font-bold text-brand-navy mb-2 group-hover:text-brand-gold transition">Interior Painting Services</h3>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                                Complete interior and exterior painting services for homes, small commercial properties, and new construction builds using top-grade paints and detailed surface preparation.
+                                High-end interior painting for bedrooms, living rooms, kitchens, and trims using premium low-VOC paints, crisp cut-ins, and thorough wall prep.
                             </p>
                         </div>
-                        <a href="#contact" class="text-xs font-bold text-brand-gold hover:text-brand-goldHover flex items-center gap-1">
-                            Book Painting Quote <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                        </a>
+                        <div>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="bg-slate-100 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded">Wall Prep</span>
+                                <span class="bg-slate-100 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded">Accent Walls</span>
+                                <span class="bg-slate-100 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded">Crisp Lines</span>
+                            </div>
+                            <a href="#contact" class="text-xs font-bold text-brand-gold hover:text-brand-goldHover flex items-center gap-1">
+                                Book Painting Quote <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Service 2: Plumbing Services -->
+                <!-- Service 2: Plumbing Inspection Services -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 border border-slate-200/80 flex flex-col group">
                     <div class="h-52 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1505798577917-a65157d3320a?auto=format&fit=crop&w=800&q=80" 
-                             alt="Plumbing Inspection Services near me" 
+                             alt="Plumbing Inspection Services" 
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                             onerror="this.src='https://placehold.co/600x400/0F2C59/ffffff?text=Plumbing+Services'">
+                             onerror="this.src='https://placehold.co/600x400/0d2c54/ffffff?text=Plumbing+Services'">
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <h3 class="text-xl font-heading font-bold text-brand-navy mb-2 group-hover:text-brand-gold transition">Plumbing Support & Inspection</h3>
+                            <h3 class="text-xl font-heading font-bold text-brand-navy mb-2 group-hover:text-brand-gold transition">Plumbing Inspection Services</h3>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                                Reliable plumbing inspection services and general plumbing support for residential and commercial remodels to ensure your fixtures and pipes are in peak working condition.
+                                Reliable plumbing support and thorough inspections during remodels to ensure pipes, valves, and fixtures are leak-free before wall enclosures.
                             </p>
                         </div>
-                        <a href="#contact" class="text-xs font-bold text-brand-gold hover:text-brand-goldHover flex items-center gap-1">
-                            Schedule Inspection <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                        </a>
+                        <div>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="bg-slate-100 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded">Leak Detection</span>
+                                <span class="bg-slate-100 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded">Fixture Support</span>
+                                <span class="bg-slate-100 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded">Remodel Checks</span>
+                            </div>
+                            <a href="#contact" class="text-xs font-bold text-brand-gold hover:text-brand-goldHover flex items-center gap-1">
+                                Schedule Inspection <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -345,81 +345,109 @@
                         <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" 
                              alt="Drywall Installation Services" 
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                             onerror="this.src='https://placehold.co/600x400/0F2C59/ffffff?text=Drywall+Services'">
+                             onerror="this.src='https://placehold.co/600x400/0d2c54/ffffff?text=Drywall+Services'">
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
                             <h3 class="text-xl font-heading font-bold text-brand-navy mb-2 group-hover:text-brand-gold transition">Drywall Installation & Repair</h3>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                                Expert drywall installation, sheet replacement, wall patching, texturing, and complete wall finish replacements to restore damaged walls prior to painting.
+                                Complete sheetrock hanging, taping, mudding, drywall replacement, wall patching, and smooth finish restoration prior to priming and painting.
                             </p>
                         </div>
-                        <a href="#contact" class="text-xs font-bold text-brand-gold hover:text-brand-goldHover flex items-center gap-1">
-                            Request Drywall Repair <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                        </a>
+                        <div>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="bg-slate-100 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded">Wall Patching</span>
+                                <span class="bg-slate-100 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded">Replacement</span>
+                                <span class="bg-slate-100 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded">Wall Texturing</span>
+                            </div>
+                            <a href="#contact" class="text-xs font-bold text-brand-gold hover:text-brand-goldHover flex items-center gap-1">
+                                Request Drywall Repair <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Service 4: Remodel Services -->
+                <!-- Service 4: Remodel & Wood Repair -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 border border-slate-200/80 flex flex-col group">
                     <div class="h-52 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=800&q=80" 
-                             alt="Residential and Commercial Remodel" 
+                             alt="Remodel and Wood Repair" 
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                             onerror="this.src='https://placehold.co/600x400/0F2C59/ffffff?text=Remodel+Services'">
+                             onerror="this.src='https://placehold.co/600x400/0d2c54/ffffff?text=Remodel+Services'">
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <h3 class="text-xl font-heading font-bold text-brand-navy mb-2 group-hover:text-brand-gold transition">Residential & Commercial Remodel</h3>
+                            <h3 class="text-xl font-heading font-bold text-brand-navy mb-2 group-hover:text-brand-gold transition">Remodel & Wood Repair</h3>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                                Revitalize living spaces and commercial offices with seamless remodeling solutions combining drywall, wall finishes, structural updates, and painting.
+                                Precision wood trim repair, baseboard fixing, wall finish replacements, and full residential/commercial interior remodeling solutions.
                             </p>
                         </div>
-                        <a href="#contact" class="text-xs font-bold text-brand-gold hover:text-brand-goldHover flex items-center gap-1">
-                            Consult Remodel Team <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                        </a>
+                        <div>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="bg-slate-100 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded">Wood Trim</span>
+                                <span class="bg-slate-100 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded">Baseboards</span>
+                                <span class="bg-slate-100 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded">Finish Replace</span>
+                            </div>
+                            <a href="#contact" class="text-xs font-bold text-brand-gold hover:text-brand-goldHover flex items-center gap-1">
+                                Consult Remodel Team <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Service 5: Color & Decorating Help -->
+                <!-- Service 5: New Build & Commercial Painting -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 border border-slate-200/80 flex flex-col group">
                     <div class="h-52 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80" 
-                             alt="Color and Decorating Help" 
+                             alt="New Build and Commercial Painting" 
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                             onerror="this.src='https://placehold.co/600x400/0F2C59/ffffff?text=Color+and+Decorating'">
+                             onerror="this.src='https://placehold.co/600x400/0d2c54/ffffff?text=Commercial+Painting'">
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <h3 class="text-xl font-heading font-bold text-brand-navy mb-2 group-hover:text-brand-gold transition">Color & Decorating Guidance</h3>
+                            <h3 class="text-xl font-heading font-bold text-brand-navy mb-2 group-hover:text-brand-gold transition">New Build & Small Commercial</h3>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                                Professional assistance choosing color palettes, sheen levels, and accent features that align with your aesthetic goals and lighting.
+                                Specialized painter solutions for new residential builds, offices, and storefronts in Broken Arrow wanting fast turnaround and durable coats.
                             </p>
                         </div>
-                        <a href="#contact" class="text-xs font-bold text-brand-gold hover:text-brand-goldHover flex items-center gap-1">
-                            Get Color Advice <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                        </a>
+                        <div>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="bg-slate-100 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded">New Construction</span>
+                                <span class="bg-slate-100 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded">Commercial</span>
+                                <span class="bg-slate-100 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded">Retail</span>
+                            </div>
+                            <a href="#contact" class="text-xs font-bold text-brand-gold hover:text-brand-goldHover flex items-center gap-1">
+                                Get Commercial Quote <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Service 6: Wood & Wall Repairs -->
+                <!-- Service 6: Color & Decorating Guidance -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 border border-slate-200/80 flex flex-col group">
                     <div class="h-52 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" 
-                             alt="Wood and Wall Repairs" 
+                             alt="Color and Decorating Help" 
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                             onerror="this.src='https://placehold.co/600x400/0F2C59/ffffff?text=Wood+and+Wall+Repairs'">
+                             onerror="this.src='https://placehold.co/600x400/0d2c54/ffffff?text=Color+Advice'">
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <h3 class="text-xl font-heading font-bold text-brand-navy mb-2 group-hover:text-brand-gold transition">Wood & Wall Finish Repair</h3>
+                            <h3 class="text-xl font-heading font-bold text-brand-navy mb-2 group-hover:text-brand-gold transition">Color & Decorating Help</h3>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                                Precision wood trim restoration, baseboard repair, surface smoothing, and custom wall texturing for seamless home restoration.
+                                Professional assistance choosing paint palettes, sheen levels, and accent combinations to complement your interior lighting and decor.
                             </p>
                         </div>
-                        <a href="#contact" class="text-xs font-bold text-brand-gold hover:text-brand-goldHover flex items-center gap-1">
-                            Book Repair Work <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                        </a>
+                        <div>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="bg-slate-100 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded">Color Palettes</span>
+                                <span class="bg-slate-100 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded">Sheen Selection</span>
+                                <span class="bg-slate-100 text-slate-700 text-[11px] font-semibold px-2 py-0.5 rounded">Decor Match</span>
+                            </div>
+                            <a href="#contact" class="text-xs font-bold text-brand-gold hover:text-brand-goldHover flex items-center gap-1">
+                                Request Color Help <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -427,15 +455,15 @@
         </div>
     </section>
 
-    <!-- CUSTOMER REVIEWS / TESTIMONIALS -->
+    <!-- REVIEWS / TESTIMONIALS SECTION -->
     <section id="reviews" class="py-20 bg-brand-navy text-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
                 <span class="px-3.5 py-1.5 bg-brand-gold/20 text-brand-gold text-xs font-extrabold uppercase tracking-widest rounded-full">
-                    Customer Feedback
+                    Customer Reviews
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-heading font-extrabold">Loved by Broken Arrow Residents</h2>
-                <p class="text-slate-300 text-sm sm:text-base">Read honest local reviews from home and business owners in Oklahoma.</p>
+                <p class="text-slate-300 text-sm sm:text-base">Read authentic feedback from home and business owners in Oklahoma.</p>
             </div>
 
             <!-- Reviews Grid -->
@@ -452,12 +480,12 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <p class="text-slate-200 text-sm leading-relaxed mb-6 italic">
-                            "Matthews Painting handled our interior painting and drywall patching after a leak. The lines are super sharp, and they left the house spotless. Highly recommend them in Broken Arrow!"
+                            "Matthews Painting did an outstanding job with our interior painting and drywall patching after a leak. The lines are super sharp, and they left the house spotless. Best painters in Broken Arrow!"
                         </p>
                     </div>
                     <div class="flex items-center gap-3 border-t border-slate-800 pt-4">
-                        <div class="w-10 h-10 rounded-full bg-brand-gold text-white font-bold flex items-center justify-center">
-                            DB
+                        <div class="w-10 h-10 rounded-full bg-brand-gold text-brand-navy font-black flex items-center justify-center">
+                            DM
                         </div>
                         <div>
                             <h4 class="font-bold text-white text-sm">David Miller</h4>
@@ -477,11 +505,11 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <p class="text-slate-200 text-sm leading-relaxed mb-6 italic">
-                            "Great experience with their plumbing inspection and drywall repair services during our kitchen remodel. Fast, courteous, and honest pricing from start to finish."
+                            "Great experience with their plumbing inspection and drywall repair during our kitchen remodel. Fast, courteous, and honest pricing from start to finish."
                         </p>
                     </div>
                     <div class="flex items-center gap-3 border-t border-slate-800 pt-4">
-                        <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center">
+                        <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-black flex items-center justify-center">
                             KL
                         </div>
                         <div>
@@ -502,11 +530,11 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <p class="text-slate-200 text-sm leading-relaxed mb-6 italic">
-                            "Called them for color advice and painting our new commercial storefront. They worked around our schedule and delivered high quality work on short notice!"
+                            "Called them for color advice and painting our new commercial storefront. They worked around our operating hours and delivered top tier work on time!"
                         </p>
                     </div>
                     <div class="flex items-center gap-3 border-t border-slate-800 pt-4">
-                        <div class="w-10 h-10 rounded-full bg-sky-600 text-white font-bold flex items-center justify-center">
+                        <div class="w-10 h-10 rounded-full bg-sky-600 text-white font-black flex items-center justify-center">
                             JS
                         </div>
                         <div>
@@ -525,10 +553,10 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 space-y-3">
                 <span class="px-3.5 py-1.5 bg-amber-100 text-brand-goldHover text-xs font-extrabold uppercase tracking-widest rounded-full">
-                    Common Questions
+                    Got Questions?
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-heading font-black text-brand-navy">Frequently Asked Questions</h2>
-                <p class="text-slate-600 text-sm">Find answers regarding estimates, timelines, and multi-trade services.</p>
+                <p class="text-slate-600 text-sm">Find quick answers regarding our trade services, estimates, and timelines.</p>
             </div>
 
             <!-- FAQ Accordion List -->
@@ -541,40 +569,40 @@
                         <i class="fa-solid fa-chevron-down text-brand-gold transition-transform duration-300"></i>
                     </button>
                     <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 border-t border-slate-200/60 leading-relaxed bg-white">
-                        Yes! We provide 100% free, no-obligation estimates for all painting, drywall installation, plumbing inspection, and remodeling projects in Broken Arrow and neighboring towns.
+                        Yes! We offer 100% free, no-obligation estimates for all interior painting, drywall installation & repair, plumbing inspections, and remodeling projects in Broken Arrow and neighboring towns.
                     </div>
                 </div>
 
                 <!-- Item 2 -->
                 <div class="bg-brand-slate rounded-xl border border-slate-200 overflow-hidden">
                     <button class="faq-btn w-full p-5 text-left font-bold text-brand-navy flex justify-between items-center focus:outline-none hover:bg-slate-100 transition" onclick="toggleFaq(this)">
-                        <span>Can you handle both commercial and residential projects?</span>
+                        <span>Do you repair damaged drywall and wall texturing before painting?</span>
                         <i class="fa-solid fa-chevron-down text-brand-gold transition-transform duration-300"></i>
                     </button>
                     <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 border-t border-slate-200/60 leading-relaxed bg-white">
-                        Yes, Matthews Painting handles residential homes, single family rentals, new builds, as well as small commercial spaces, offices, and retail locations.
+                        Absolutely. We inspect and handle all necessary sheetrock patching, replacement, wood trim repair, and custom wall texturing prior to applying primer and top paint coats.
                     </div>
                 </div>
 
                 <!-- Item 3 -->
                 <div class="bg-brand-slate rounded-xl border border-slate-200 overflow-hidden">
                     <button class="faq-btn w-full p-5 text-left font-bold text-brand-navy flex justify-between items-center focus:outline-none hover:bg-slate-100 transition" onclick="toggleFaq(this)">
-                        <span>Do you repair damaged drywall before painting?</span>
+                        <span>What is included in your plumbing inspection services?</span>
                         <i class="fa-solid fa-chevron-down text-brand-gold transition-transform duration-300"></i>
                     </button>
                     <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 border-t border-slate-200/60 leading-relaxed bg-white">
-                        Absolutely. We inspect and perform all necessary drywall patching, sheet replacements, texturing, and wood trim repairs before applying primer and top coats.
+                        Our plumbing inspection services cover leak detection, fixture checks, pipe integrity evaluations, and general plumbing support during home remodels or before sealing up drywall.
                     </div>
                 </div>
 
                 <!-- Item 4 -->
                 <div class="bg-brand-slate rounded-xl border border-slate-200 overflow-hidden">
                     <button class="faq-btn w-full p-5 text-left font-bold text-brand-navy flex justify-between items-center focus:outline-none hover:bg-slate-100 transition" onclick="toggleFaq(this)">
-                        <span>What are your business hours?</span>
+                        <span>What are your regular business hours?</span>
                         <i class="fa-solid fa-chevron-down text-brand-gold transition-transform duration-300"></i>
                     </button>
                     <div class="faq-content hidden p-5 pt-0 text-xs sm:text-sm text-slate-600 border-t border-slate-200/60 leading-relaxed bg-white">
-                        We are open Monday through Saturday from 7:00 AM to 7:00 PM, and Sundays from 5:30 AM to 7:00 PM.
+                        We operate Monday through Saturday from 7:00 AM to 7:00 PM, and Sundays from 5:30 AM to 7:00 PM.
                     </div>
                 </div>
 
@@ -587,14 +615,14 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12">
                 
-                <!-- Left Info Box -->
+                <!-- Left Info Box (Contains full contact details including Phone Number) -->
                 <div class="lg:col-span-5 space-y-6">
-                    <div class="inline-block px-3 py-1 bg-amber-100 text-brand-goldHover text-xs font-extrabold uppercase tracking-widest rounded-md">
+                    <div class="inline-block px-3.5 py-1 bg-amber-100 text-brand-goldHover text-xs font-extrabold uppercase tracking-widest rounded-md">
                         Get In Touch
                     </div>
                     <h2 class="text-3xl font-heading font-black text-brand-navy">Contact Matthews Painting</h2>
                     <p class="text-slate-600 text-sm leading-relaxed">
-                        Ready to start your painting or repair project? Call us directly or send a message using the quote form.
+                        Ready to start your painting, drywall, or remodeling project? Call us directly or send a message using the estimate form.
                     </p>
 
                     <div class="space-y-4 pt-2">
@@ -631,7 +659,7 @@
                             </div>
                         </div>
 
-                        <!-- Hours Card -->
+                        <!-- Business Hours Card -->
                         <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
                             <div class="w-10 h-10 rounded-lg bg-brand-navy text-brand-gold flex items-center justify-center text-lg shrink-0">
                                 <i class="fa-solid fa-clock"></i>
@@ -645,18 +673,18 @@
                     </div>
 
                     <div class="pt-2">
-                        <a href="https://maps.app.goo.gl/qZaD9HCqz5LHgXW88" target="_blank" class="inline-flex items-center gap-2 px-5 py-3 bg-brand-navy hover:bg-brand-navyDark text-white font-bold text-xs rounded-xl shadow">
+                        <a href="https://maps.app.goo.gl/qZaD9HCqz5LHgXW88" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 bg-brand-navy hover:bg-brand-navyDark text-white font-bold text-xs rounded-xl shadow">
                             <i class="fa-brands fa-google text-brand-gold"></i> Open Google Maps Listing
                         </a>
                     </div>
                 </div>
 
-                <!-- Right Form & Map -->
+                <!-- Right Form & Embedded Google Map -->
                 <div class="lg:col-span-7 space-y-8">
                     <!-- Contact Form -->
                     <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-lg">
                         <h3 class="text-xl font-heading font-black text-brand-navy mb-4">Send Us A Message</h3>
-                        <form id="mainContactForm" onsubmit="handleFormSubmit(event, 'Contact Page')" class="space-y-4">
+                        <form id="mainContactForm" onsubmit="handleFormSubmit(event, 'Contact Form')" class="space-y-4">
                             <div class="grid sm:grid-cols-2 gap-4">
                                 <div>
                                     <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Full Name *</label>
@@ -676,27 +704,28 @@
                                     <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Service Needed</label>
                                     <select class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold outline-none text-sm">
                                         <option value="Interior Painting Services">Interior Painting Services</option>
-                                        <option value="Plumbing Inspection">Plumbing inspection Services</option>
-                                        <option value="Drywall Installation">Drywall Installation Services</option>
-                                        <option value="Remodel Services">Remodel Services</option>
-                                        <option value="Wood & Wall Repair">Wood & Wall Repairs</option>
+                                        <option value="Plumbing Inspection Services">Plumbing Inspection Services</option>
+                                        <option value="Drywall Installation Services">Drywall Installation & Repair</option>
+                                        <option value="Remodel & Wood Repair">Remodel & Wood Repair</option>
+                                        <option value="New Build Painting">New Build Painting</option>
+                                        <option value="Small Commercial Painting">Small Commercial Painting</option>
                                     </select>
                                 </div>
                             </div>
                             <div>
-                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Message / Details</label>
-                                <textarea rows="3" placeholder="Describe your project, home size, or questions..." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold outline-none text-sm"></textarea>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Message / Project Details</label>
+                                <textarea rows="3" placeholder="Describe your project, home size, or requested timing..." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold outline-none text-sm"></textarea>
                             </div>
-                            <button type="submit" class="w-full py-3.5 bg-brand-gold hover:bg-brand-goldHover text-white font-heading font-extrabold rounded-xl shadow uppercase tracking-wider text-sm transition">
+                            <button type="submit" class="w-full py-3.5 bg-brand-gold hover:bg-brand-goldHover text-brand-navy font-heading font-extrabold rounded-xl shadow uppercase tracking-wider text-sm transition">
                                 Submit Request
                             </button>
                         </form>
                     </div>
 
-                    <!-- Map Embed -->
+                    <!-- Embedded Google Map -->
                     <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md h-64 bg-slate-100">
                         <iframe 
-                            title="Matthews Painting Location Map"
+                            title="Matthews Painting Google Location Map"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3225.2635921822394!2d-95.79512392348577!3d36.06141360890691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b68c983a9a1d41%3A0xc3b8384b6f195ef!2s112%20E%20Granger%20Pl%2C%20Broken%20Arrow%2C%20OK%2074012!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
                             width="100%" 
                             height="100%" 
@@ -717,28 +746,27 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
                 
-                <!-- Brand Info -->
+                <!-- Brand Info & Official Logo -->
                 <div class="space-y-4">
                     <div class="flex items-center gap-3">
                         <img src="https://cmatthewspainting.com/wp-content/uploads/2025/02/567527181_1383647086799721_1879409617736062730_n-Photoroom-copy-1.png" 
                              alt="Matthews Painting Logo" 
-                             class="h-12 w-auto object-contain bg-white/90 p-1.5 rounded-xl shadow-md"
-                             onerror="this.src='https://placehold.co/150x50/ffffff/0F2C59?text=Matthews+Painting'">
-                        <span class="text-xl font-heading font-extrabold text-white">MATTHEWS</span>
+                             class="h-12 w-auto object-contain bg-white/95 p-1.5 rounded-xl shadow-md"
+                             onerror="this.src='https://placehold.co/150x50/ffffff/0d2c54?text=Matthews+Painting'">
                     </div>
                     <p class="text-xs text-slate-400 leading-relaxed">
-                        Top-rated painter and contractor in Broken Arrow, OK. Dedicated to quality interior painting, drywall repairs, plumbing inspection, and custom remodeling.
+                        Top-rated painter and multi-trade contractor in Broken Arrow, OK. Dedicated to quality interior painting, drywall repairs, plumbing inspections, and remodels.
                     </p>
                     <div class="pt-2">
-                        <a href="https://maps.app.goo.gl/qZaD9HCqz5LHgXW88" target="_blank" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-brand-gold hover:text-white flex items-center justify-center transition">
+                        <a href="https://maps.app.goo.gl/qZaD9HCqz5LHgXW88" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-brand-gold hover:text-brand-navy flex items-center justify-center transition">
                             <i class="fa-brands fa-google"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Navigation Links -->
+                <!-- Navigation Quick Links -->
                 <div>
-                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">Quick Navigation</h4>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">Quick Links</h4>
                     <ul class="space-y-2 text-xs">
                         <li><a href="#home" class="hover:text-brand-gold transition">Home</a></li>
                         <li><a href="#about" class="hover:text-brand-gold transition">About Us</a></li>
@@ -756,9 +784,9 @@
                         <li><a href="#services" class="hover:text-brand-gold transition">Interior Painting Services</a></li>
                         <li><a href="#services" class="hover:text-brand-gold transition">Plumbing Inspection Services</a></li>
                         <li><a href="#services" class="hover:text-brand-gold transition">Drywall Installation & Repair</a></li>
-                        <li><a href="#services" class="hover:text-brand-gold transition">Remodel Services</a></li>
+                        <li><a href="#services" class="hover:text-brand-gold transition">Remodel & Wood Repair</a></li>
+                        <li><a href="#services" class="hover:text-brand-gold transition">New Build & Commercial Painting</a></li>
                         <li><a href="#services" class="hover:text-brand-gold transition">Color & Decorating Help</a></li>
-                        <li><a href="#services" class="hover:text-brand-gold transition">Wood & Wall Repairs</a></li>
                     </ul>
                 </div>
 
@@ -778,16 +806,16 @@
                             <i class="fa-solid fa-envelope text-brand-gold"></i>
                             <a href="mailto:chance5134@yahoo.com" class="hover:text-brand-gold transition break-all">chance5134@yahoo.com</a>
                         </li>
-                        <li class="flex items-center gap-2">
-                            <i class="fa-solid fa-clock text-brand-gold"></i>
-                            <span>Mon - Sat: 7 AM-7 PM | Sun: 5:30 AM-7 PM</span>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-clock text-brand-gold mt-0.5"></i>
+                            <span>Mon - Sat: 7 AM-7 PM<br>Sun: 5:30 AM-7 PM</span>
                         </li>
                     </ul>
                 </div>
 
             </div>
 
-            <!-- Bottom Copyright -->
+            <!-- Bottom Copyright Notice -->
             <div class="mt-12 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
                 <p>© 2026 Matthews Painting. All Rights Reserved.</p>
             </div>
@@ -796,10 +824,11 @@
 
     <!-- INTERACTIVE JAVASCRIPT LOGIC -->
     <script>
-        // Mobile Navigation Toggle
+        // Mobile Navigation Menu Toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
         const menuIcon = document.getElementById('menuIcon');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
@@ -812,7 +841,16 @@
             }
         });
 
-        // Accordion FAQ Toggle Logic
+        // Close mobile menu on menu link click
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Accordion FAQ Toggle
         function toggleFaq(buttonElement) {
             const content = buttonElement.nextElementSibling;
             const icon = buttonElement.querySelector('.fa-chevron-down');
@@ -825,13 +863,14 @@
             }
         }
 
-        // Form Submit Handler
+        // Form Submission Handler
         function handleFormSubmit(e, formName) {
             e.preventDefault();
-            showNotification(`Thank you! Your ${formName} request has been submitted. Matthews Painting will contact you shortly.`);
+            showNotification(`Thank you! Your ${formName} request has been received. Matthews Painting will contact you shortly.`);
             e.target.reset();
         }
 
+        // Custom Toast Notification
         function showNotification(message) {
             const toast = document.createElement('div');
             toast.className = 'fixed top-5 right-5 z-50 bg-brand-navy text-white px-6 py-4 rounded-xl shadow-2xl border-l-4 border-brand-gold text-sm font-bold flex items-center gap-3 transition transform duration-300';
